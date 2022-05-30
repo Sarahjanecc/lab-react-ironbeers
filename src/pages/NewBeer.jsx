@@ -36,7 +36,7 @@ function NewBeer() {
         contributed_by,
       };
 
-      await fetch.post("https://ironbnb-m3.herokuapp.com/beers", newBeer);
+      await fetch.post(`https://ih-beers-api2.herokuapp.com/beers`, newBeer);
       navigate("/new");
     } catch (error) {
       navigate("/error");
